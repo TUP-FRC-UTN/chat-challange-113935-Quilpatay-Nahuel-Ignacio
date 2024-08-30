@@ -1,0 +1,15 @@
+<div class="container">
+    <app-sala [user1]="user1" [user2]="user2" [user1Messages]="user1Messages"
+        [user2Messages]="user2Messages"></app-sala>
+
+    <div class="row mt-4">
+        <div class="col-md-6 mb-3">
+            <app-mensaje-usuario [userName]="user1"
+                (newSentMessage)="onSentMessage($event, user1)"></app-mensaje-usuario>
+        </div>
+        <div class="col-md-6 mb-3">
+            <app-mensaje-usuario [userName]="user2"
+                (newSentMessage)="onSentMessage($event, user2)"></app-mensaje-usuario>
+        </div>
+    </div>
+</div>

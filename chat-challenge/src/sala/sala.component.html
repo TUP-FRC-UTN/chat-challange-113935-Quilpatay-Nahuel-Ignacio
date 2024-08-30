@@ -1,0 +1,30 @@
+<div class="container mt-4">
+    <div class="chat-room p-4">
+        <h1 class="mb-4">Sala de Chat</h1>
+        <div class="conversation p-3 mb-3">
+            <h2 class="mb-3">Conversación</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="user-message p-3">
+                        <h1> {{user1}} </h1>
+                        <ul>
+                            @for (m of user1Messages; track $index) {
+                            <li> {{m}} </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="user-message p-3">
+                        <h1> {{user2}} </h1>
+                        <ul>
+                            @for (m of user2Messages; track $index) {
+                            <li> {{m}} </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
